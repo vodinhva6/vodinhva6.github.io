@@ -1,0 +1,104 @@
+header.header{
+    background-color: bisque;
+    margin: 0px;
+    width: 99.7%;
+    height: 200px; 
+    top: 0px;
+    position: fixed;
+    transition: top 1.5s;
+    border: 0.2rem solid black;
+    display: flex;
+    overflow: hidden;
+}
+
+header.header .logo{
+    height: 100%;
+    width: 50%;
+    background-image: url("../asset/conluoi.jpg");
+    background-size: contain;
+}
+
+header.header .menu{
+    height: 100%;
+    width: 50%;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    padding-left: 100px;
+}
+
+header.header .menu .topMenu{
+    border-bottom: 0.5rem solid black;
+}
+
+header.header .menu .bottomMenu{
+    padding-left: 10%;
+}
+
+header.header .menu .subMenu{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+header.header .menu .subMenu .button{
+    height: 3rem;
+    width: 7rem;
+    border: 0.2rem solid black;
+    margin-top: 1rem;
+    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (width > 1000px)
+{
+    header.header .deco{
+        border-bottom: 1rem solid black;
+        width: 20rem;
+        height: 20rem;
+        rotate: 45deg;
+        position: absolute;
+        top: -94%;
+        left: 50%;
+    }
+}
+
+@media (width < 1000px)
+{
+    header.header{
+        height: 100px; 
+    }
+}
+
+div.titlebar1{
+    background-color: cadetblue;
+    margin: 0px;
+    width: 100%;
+    height: 300px;
+
+}
+div.titlebar2{
+    background-color: saddlebrown;
+    margin: 0px;
+    width: 100%;
+    height: 300px;
+}
+div.titlebar3{
+    background-color: rebeccapurple;
+    margin: 0px;
+    width: 100%;
+    height: 300px;
+}
+div.titlebar4{
+    background-color: navy;
+    margin: 0px;
+    width: 100%;
+    height: 300px;
+    border: 0.2rem solid black;
+}
+body{
+    margin: 0px;
+    background-color: aliceblue;
+}

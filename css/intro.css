@@ -1,0 +1,13 @@
+div.intro{
+    margin-top: 200px;
+    height: 300px;
+    width: 100%;
+    border: 1rem solid;
+}
+
+@media (width < 1000px)
+{
+    div.intro{
+        margin-top: 100px; 
+    }
+}

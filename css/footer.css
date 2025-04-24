@@ -1,0 +1,14 @@
+footer.footer{
+    width: 100%;
+    height: 600px;
+    background-color: goldenrod;
+    border: 0.2rem solid beige;
+}
+
+
+@media (width < 1000px)
+{
+    footer.footer{
+        height: 300px;
+    }
+}
