@@ -43,7 +43,7 @@ window.addEventListener('scroll', function()
     {
     if(currentTop <= -div.offsetHeight)
     {
-        if(speed < -4.0)
+        if(speed < -2.0)
             {
                 div.style.top = '0px';  
                 div.style.transitionDuration = "0.5s";
