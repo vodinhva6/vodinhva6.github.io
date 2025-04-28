@@ -1,13 +1,21 @@
 div.intro{
-    margin-top: 200px;
-    height: 300px;
+    margin-top: -800px;
+    height: 800px;
     width: 100%;
     border: 1rem solid;
+    background-image: url("../asset/KeyArtv1.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: fixed;
+    z-index: -1;
+    background-color: black;
 }
 
 @media (width < 1000px)
 {
     div.intro{
-        margin-top: 100px; 
+        margin-top: -600px;
+        background-size: auto;
     }
 }

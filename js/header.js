@@ -1,12 +1,9 @@
 
 let lastScrollTop = 0;
 let lastTimestamp = 0;
-let invision = false;
-let divStatus = "None";
+var div = this.document.getElementById("movingdiv");
 window.addEventListener('scroll', function() 
 {
-    var div = this.document.getElementById("movingdiv");
-    
     const currentTimestamp = performance.now();
     const currentScrollTop = window.pageYOffset;
 
@@ -35,15 +32,14 @@ window.addEventListener('scroll', function()
             div.style.transitionDuration = "0.5s";
             return;
         }
-        console.log(currentScrollTop);
+      
         div.style.top = currentTop + "px";
-        div.style.transitionDuration = "0s";
     }
     else 
     {
     if(currentTop <= -div.offsetHeight)
     {
-        if(speed < -2.0)
+        if(speed < -6.0)
             {
                 div.style.top = '0px';  
                 div.style.transitionDuration = "0.5s";
@@ -55,7 +51,6 @@ window.addEventListener('scroll', function()
                 currentTop -= deltaScroll;
                 if(currentTop > 0)
                     currentTop = 0;
-                div.style.transitionDuration = "0s";
                 div.style.top = currentTop + "px";
     }
     else if (currentTop == 0)
@@ -74,3 +69,12 @@ window.addEventListener('scroll', function()
 
 });
 
+function updateOpacity()
+{
+    let divTop = div.style.top;
+    var currentTop = parseFloat(divTop);
+    var t = (Math.abs(div.offsetHeight) - Math.abs(currentTop)) / div.offsetHeight;
+   
+    div.style.opacity = t;
+}
+setInterval(updateOpacity,100);
