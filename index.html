@@ -5,47 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/news.css">
-    <link rel="stylesheet" href="css/intro.css">
+    <link rel="stylesheet" href="css/introGame.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/studioIntro.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>BanZGame</title>
 </head>
-<body class ="body">
+<body>
     <header class = "header" id ="movingdiv">
         <div class="logo">
             <a href="./index.html" class = "logoImage"></a>
-
-            <div class = "slogan">
-                <l class="studioName"> BanZGame Studio</l>
-                <l class = "studioSlogan">  Đam mê tạo nên chất lượng </l>
-              
-            </div>
         </div>
 
         <div class="menu">
-            <div class="topMenu halfMenu">
-                <div class ="button buttonTop">
+            <div class="tab">
+                <div class ="button">
                     Tác phẩm
                 </div>
-                <div class ="button buttonTop">
+                <div class ="button">
                     Thông tin
                 </div>
-                <div class ="button buttonTop">
+                <div class ="button">
+                    Tin tức
+                </div>
+                <div class ="button">
+                    Tuyển dụng
+                </div>
+                <div class ="button">
+                    Liên hệ
+                </div>
+                <div class ="button">
                     Lang Vi|Eng
                 </div>
             </div>
-
-            <div class="bottomMenu halfMenu">
-                <div class ="button buttonBottom">
-                    Tin tức
-                </div>
-                <div class ="button buttonBottom">
-                    Tuyển dụng
-                </div>
-                <div class ="button buttonBottom">
-                    Liên hệ
-                </div>
-            </div>
+            <form class="search-bar">
+                <input type="text" placeholder="Tìm kiếm...">
+                <button type="submit">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="white">
+                    <path d="M10 18a8 8 0 1 0-5.657-2.343L2 18l2 2 2.343-2.343A7.974 7.974 0 0 0 10 18zm0-14a6 6 0 1 1-4.242 10.242A6 6 0 0 1 10 4z"/>
+                  </svg>
+                </button>
+              </form>
+              
         </div>
 
         <div class="deco">
@@ -54,10 +56,55 @@
 
     </header>
 
-    <div class="intro" id="intro">
-
+    <div class="introGame" id="introGame">
+        <div class = "gameName">
+            <a class ="name">AeroWar Game:</a>
+            
+        </div>
+        <a class="status">Free!</a>
+        <div class ="detail">
+            Bạn là một điều phối viên trên tàu mẹ, 
+            điều hướng<br>các chuyến bay cập bến an toàn và
+            tránh xảy ra va<br>chạm giữa các chuyên cơ với nhau.
+        </div>
+        <a href="index.html" class="trialPlay">
+            Chơi thử ngay bây giờ!
+        </a>
     </div>
 
+    <div class="studioIntro" id="studioIntro">
+        <div class="underBorderBox">
+
+        </div>
+        <p class="membersIntro">
+            Member Introduction
+        </p>
+        <p class = "jobPosition" id="jobPosition">
+
+        </p>
+        <p class = "name" id="memberName">
+
+        </p>
+
+        <p class="statement" id="statement">
+
+        </p>
+        
+        <div class ="mainImage" id="mainImage">
+
+        </div>
+
+        <div class = "turnLeft turnButton" id="turnLeft">
+          
+        </div>
+
+        <div class="turnRight turnButton" id = "turnRight">
+           
+        </div>
+
+        
+    </div>
+    
     <article class ="news" id ="idNews">
         <div class="mainNews" id="mainNewsId">
         </div>
@@ -126,5 +173,7 @@
 
     <script src="js/header.js"></script>
     <script src="js/news.js"></script>
+    <script src="js/studioIntro.js"></script>
+
 </body>
 </html>

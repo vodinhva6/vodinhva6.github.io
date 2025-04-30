@@ -1,0 +1,72 @@
+div.introGame{
+    margin-top: -800px;
+    height: 100%;
+    width: 100%;
+    background-image: url("../asset/KeyArtv1.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: fixed;
+    z-index: -1;
+    background-color: black;
+    color-interpolation-filters: sRGB;
+}
+
+div.introGame .gameName .name{
+    font-weight: bolder;
+    font-size: 40px;
+    color: white;
+    top: 25%;
+    left: 3%;
+    position: absolute;
+}
+
+div.introGame .status{
+    width: 120px;
+    font-weight: bolder;
+    font-size: 40px;
+    color: white;
+    top: 25%;
+    left: 380px;
+    position: absolute;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.introGame .detail{
+    font-weight: lighter;
+    font-size: 20px;
+    color: white;
+    top: 35%;
+    left: 3%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.introGame .trialPlay{
+    width: 440px;
+    height: 50px;
+    border: 0.1rem solid white;
+    font-weight: normal;
+    font-size: 17px;
+    color: white;
+    top: 50%;
+    left: 3%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+@media (width < 1000px)
+{
+    div.introGame{
+        margin-top: -600px;
+        background-size: auto;
+    }
+}

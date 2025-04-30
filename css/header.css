@@ -14,113 +14,112 @@
 }
 
 header.header{
-    background-color: bisque;
+    background-color: rgba(253, 150, 210, 0.15);
     margin: 0px;
     width: 100%;
-    height: 200px; 
+    height: 100px; 
     top: 0px;
     position: fixed;
     transition: top 1.5s ease, opacity 0.5s;
     display: flex;
     overflow: hidden;
     z-index: 1;
-    background-color:floralwhite;
+    
 }
 
 header.header .logo{
     height: 100%;
-    width: 60%;
-    position: absolute;
+    width: 10%;
     display: flex;
 }
 
 header.header .logo .logoImage{
-    height: 100%;
-    width: 40%;
+    height: 80%;
+    width: 100%;
     background-image: url("../asset/image.png");
     background-position: left;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-}
-
-header.header .logo .slogan{
-    height: 100%;
-    width: 50%;
-    font-weight: 50rem;
-    padding-right: 10%;
-    display: grid;
-    grid-template-rows: 50% 50%;
-    justify-content: center;
-    align-items: center;
-}
-
-header.header .logo .slogan .studioName{
-    font-size: 3rem;
-    font-family: 'CustomFont' , sans-serif;
-    text-shadow:
-    1px 1px 2px honeydew,
-    0 0 1em rgb(117, 117, 117),
-    0 0 0.8em rgb(110, 110, 110);
-}
-
-header.header .logo .slogan .studioSlogan{
-    font-size: 2rem;
-    font-family: 'CustomFont2' , sans-serif;
+    margin-left: 25px;
+    margin-top: 10px;
+    
 }
 
 header.header .menu{
     height: 100%;
-    width: 50%;
-    display: grid;
-    grid-template-rows: 50% 50%;
-    margin-left: 50%;
-    padding-left: 60px;
-}
-
-header.header .menu .topMenu{
+    width: 90%;
+    display: flex;
     padding-left: 5%;
 }
 
-header.header .menu .bottomMenu{
-  
-    border-top: 0.15rem solid black;
-    padding-left: 15%;
-    z-index: 1;
-}
-
-header.header .menu .halfMenu{
+header.header .menu .tab{
     height: 100%;
-    width: 100%;
+    width: 70%;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-header.header .menu .halfMenu .buttonTop{
-    margin-top: 2.3rem;
-    transform-origin: left bottom;
-}
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background:rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+    height: 25%;
+    width: 25%;
+    margin-top: 30px;
+  }
 
-header.header .menu .halfMenu .buttonBottom{
-    margin-top: 0.7rem;
-    transform-origin: left top;
-}
+  .search-bar input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-size: 14px;
+    background: transparent;
+  }
 
-header.header .menu .halfMenu .button{
-    height: 3rem;
+  .search-bar button {
+    border: none;
+    background: rgba(216, 215, 215, 0.2);
+    color: white;
+    padding: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .search-bar button:hover {
+    background: #005a9e;
+  }
+
+  .search-bar:focus-within {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    border-color: #0078d4;
+  }
+
+header.header .menu .tab .button{
+    height: 2.2rem;
     width: 7.5rem;
-    margin-left: 10%;
     display: flex;
+    margin-right: 5%;
     justify-content: center;
     align-items: center;
     transition: 0.2s ease-out;
     z-index: 1;
     border-radius: 1rem;
-    background-color: whitesmoke;
-    font-family: 'CustomFont3' , sans-serif;
-    box-shadow: 0px 0px 4px;
+    font-weight: bolder;
+    color: white;
+    font-size: 14px;
 }
 
-header.header .menu .halfMenu .button:hover{
-    box-shadow: 0px 0px 10px;
+header.header .menu .tab .button:hover{
+    background-color: red;
     scale: 1.11;
 }
 
@@ -128,17 +127,14 @@ header.header .menu .halfMenu .button:hover{
 @media (width > 1000px)
 {
     header.header .deco{
-        background-color: white;
-        border-bottom: 0.3rem solid;
-        border-color: rgb(77, 72, 63);
-        width: 20rem;
-        height: 20rem;
-        rotate: 45deg;
+        border-left: 0.15rem solid;
+        border-color: rgb(190, 190, 190);
+        border-radius: 0.1rem;
+        width: 1rem;
+        height: 4rem;
         position: absolute;
-        top: -50%;
-        left: 50%;
-        scale: 5 4;
-        transform-origin: bottom;
+        margin-top: 20px;
+        left: 210px;
     }
 }
 
