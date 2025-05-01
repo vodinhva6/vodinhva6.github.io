@@ -1,9 +1,9 @@
-div.studioIntro{
+div.memberIntro{
     width: 100%;
     height: 800px;
     margin-top: 800px;
     background-color: black;
-    transition: 0.2s;
+    transition: 0.2s opacity;
     overflow: hidden;
     border: 0.1rem solid black;
     background-size: cover;
@@ -12,7 +12,7 @@ div.studioIntro{
     z-index: 0;
 }
 
-.studioIntro .underBorderBox{
+.memberIntro .underBorderBox{
     border-bottom: 0.1rem solid white;
     width: 50%;
     transform-origin: bottom center;
@@ -21,7 +21,7 @@ div.studioIntro{
     position: absolute;
 }
 
-.studioIntro p{
+.memberIntro p{
     font-weight: bolder;
     color: white;
     font-size: 3rem;
@@ -36,7 +36,7 @@ div.studioIntro{
     background-color: black;
 }
 
-.studioIntro .jobPosition{
+.memberIntro .jobPosition{
     position: none;
     margin-top: 10%;
     margin-left: 10%;
@@ -47,9 +47,10 @@ div.studioIntro{
     font-style: italic;
     z-index: 1;
     background-color: transparent;
+    transform: translate(-50%, -50%);
 }
 
-.studioIntro .name{
+.memberIntro .name{
     position: none;
     margin-top: 15%;
     margin-left: 22%;
@@ -58,9 +59,10 @@ div.studioIntro{
     height: auto;
     z-index: 1;
     background-color: transparent;
+    transform: translate(-50%, -50%);
 }
 
-.studioIntro .statement{
+.memberIntro .statement{
     position: none;
     margin-top: 20%;
     margin-left: 20%;
@@ -73,7 +75,7 @@ div.studioIntro{
     background-color: transparent;
 }
 
-.studioIntro .turnButton{
+.memberIntro .turnButton{
     position: absolute;
     margin-top: 680px;
     border: 0.2rem solid white;
@@ -82,13 +84,13 @@ div.studioIntro{
     border-radius: 30%;
 }
 
-.studioIntro .turnLeft{
+.memberIntro .turnLeft{
     margin-left: 40%;
     background-image: url("../asset/left.webp");
     background-size: 100% 100%;
 }
 
-.studioIntro .turnRight{
+.memberIntro .turnRight{
     margin-left: 55%;
     background-image: url("../asset/right.webp");
     background-size: 100% 100%;

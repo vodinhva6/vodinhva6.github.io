@@ -36,7 +36,7 @@ header.header .logo{
 header.header .logo .logoImage{
     height: 80%;
     width: 100%;
-    background-image: url("../asset/image.png");
+    background-image: url("../asset/image.webp");
     background-position: left;
     background-repeat: no-repeat;
     background-size: 100% 100%;

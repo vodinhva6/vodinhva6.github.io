@@ -2,7 +2,7 @@ function clamp(value, min, max) {
     return Math.min(Math.max(value, min), max);
   }
   
-var intro = this.document.getElementById("studioIntro");
+var intro = this.document.getElementById("memberIntro");
 function updateNewsOpacity()
 {
     var pageOff = clamp(Math.abs(window.pageYOffset),0,intro.offsetHeight) * 1.5;

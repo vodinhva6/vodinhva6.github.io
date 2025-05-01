@@ -1,0 +1,105 @@
+div.studioDetail{
+    width: 100%;
+    height: 800px;
+    background-color: black;
+    transition: 0.2s opacity;
+    overflow: hidden;
+    border: 0.1rem solid black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../asset/BackGround.png");
+    z-index: 0;
+}
+
+.studioDetail .underBorderBox{
+    border-bottom: 0.1rem solid white;
+    width: 50%;
+    transform-origin: bottom center;
+    margin-left: 25%;
+    margin-top: 50px;
+    position: absolute;
+}
+
+.studioDetail p{
+    font-weight: bolder;
+    color: white;
+    font-size: 3rem;
+    width: 35%;
+    margin-left: 50%;
+    margin-top: 45px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    background-color: black;
+}
+
+.studioDetail .logoImage{
+    background-image: url("../asset/image.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 400px;
+    height: 400px;
+    margin-left: 7%;
+    margin-top: 150px;
+}
+
+.studioDetail .url{
+    background-color: transparent;
+    font-size: 30px;
+    width: 400px;
+    height: 400px;
+    margin-left: 18%;
+    margin-top: -140px;
+}
+
+.studioDetail .highlight{
+    background-color: transparent;
+    font-size: 130px;
+    color: red;
+    width: 400px;
+    height: 400px;
+}
+
+.studioDetail .gamesCreated{
+    color: red;
+    width: 400px;
+    height: 400px;
+    margin-left: 50%;
+    margin-top: -340px;
+}
+
+.studioDetail .exp{
+    color: red;
+    width: 400px;
+    height: 400px;
+    margin-left: 80%;
+    margin-top: -340px;
+}
+
+.studioDetail .games{
+    background-color: transparent;
+    width: 400px;
+    height: 400px;
+    margin-left: 49%;
+    margin-top: -230px;
+}
+
+.studioDetail .eex{
+    background-color: transparent;
+    width: 400px;
+    height: 400px;
+    margin-left: 80%;
+    margin-top: -230px;
+}
+
+.studioDetail .intro{
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: lighter;
+    width: 1600px;
+    height: 400px;
+    margin-left: 51%;
+    margin-top: 30px;
+}

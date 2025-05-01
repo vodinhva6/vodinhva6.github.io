@@ -1,50 +1,98 @@
 article.news{
     width: 100%;
-    height: 600px;
+    height: 800px;
     display: flex;
-    z-index: 1;
-    background-color:beige;
-    transition: 0.5s;
+    background-color: black;
+    transition: 0.2s opacity;
+    overflow: hidden;
+    border: 0.1rem solid black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../asset/BackGround.png");
+    z-index: 0;
+    
+}
+
+article.news .underBorderBox{
+    border-bottom: 0.1rem solid white;
+    width: 50%;
+    transform-origin: bottom center;
+    margin-left: 25%;
+    margin-top: 50px;
+    position: absolute;
+}
+
+article.news p{
+    font-weight: bolder;
+    color: white;
+    font-size: 3rem;
+    width: 35%;
+    margin-left: 50%;
+    margin-top: 45px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    background-color: black;
 }
 
 article.news div.mainNews{
-    width: 70%;
-    height: 90%;
+    width: 50%;
+    height: 70%;
     transition: 1s;
-    background-size: contain;
+    position: relative;
+    background-size: 100% 100%;
     border-radius: 5rem;
     box-shadow: 0px 0px 5rem;
     margin-right: 4%;
-    margin-left: 2%;
-    margin-top: 2%;
-    background-color:beige;
+    margin-left: 10%;
+    margin-top: 8%;
+    background-color:black;
+    border: 0.1rem solid white;
+}
+
+article.news div.mainNews::after{
+    content: "";
+    position: absolute;
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.1)
+    );
+    border-radius: 5rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
 }
 
 article.news div.mainNews:hover{
-    background-color: whitesmoke;
-    box-shadow: 0px 0px 10rem;
+    box-shadow: 0px 0px 5rem white;
     scale: 1.02;
 }
 
 article.news div.setNews{
     width: 25%;
     height: 90%;
+    margin-top: 5.5%;
     margin-right: 2%;
+    margin-left: 5%;
 }
 
 article.news div.setNews div.subNews{
-    width: 100%;
-    height: 33%;
+    width: 70%;
+    height: 25%;
     border-radius: 2rem;
     box-shadow: 0px 0px 1rem;
-    margin-top: 4%;
+    margin-top: 6%;
     transition: 1s;
-    background-color:beige;
+    box-shadow: 0px 0px 2px white;
 }
 
 article.news div.setNews div.subNews:hover{
-    background-color: whitesmoke;
-    box-shadow: 0px 0px 5rem;
+    box-shadow: 0px 0px 2rem white;
     scale: 1.01;
 }
 
@@ -55,7 +103,7 @@ article.news div.news1{
 }
 
 article.news div.news2{
-    background-image: url("../asset/banana.png");
+    background-image: url("../asset/KeyArtv1.webp");
     background-size: contain;
 }
 
@@ -63,6 +111,43 @@ article.news div.news3{
     background-image: url("../asset/ThienThach_V1.png");
     background-size: contain;
 }
+
+
+article.news .mainNews .gameName .name{
+    font-weight: bolder;
+    font-size: 40px;
+    color: white;
+    top: 5%;
+    left: 3%;
+    position: absolute;
+}
+
+article.news .mainNews .status{
+    width: 120px;
+    font-weight: bolder;
+    font-size: 40px;
+    color: white;
+    top: 5%;
+    left: 350px;
+    position: absolute;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article.news .mainNews .detail{
+    font-weight: lighter;
+    font-size: 20px;
+    color: white;
+    top: 20%;
+    left: 3%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
 @media (width < 1000px) {
